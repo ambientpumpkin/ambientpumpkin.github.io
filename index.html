@@ -7,7 +7,6 @@
 				height: 100vh;
 				margin: 0;
 				padding: 0;
-				background-image: url('https://media.giphy.com/media/l1Avyqhb8oFhDngZy/giphy.gif');
 				background-size: auto 100%;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -15,7 +14,19 @@
 			}
 		</style>
     </head>
+	
 	<body>
-		<!-- hi! -->
+		<!-- sudo make -me coffee -->
 	</body>
+	
+	<script>
+		var gifs = ["l1Avyqhb8oFhDngZy",
+					"xUPOqjKYhyXwQhuNFK",
+					"xUySTriyi7QmDEra6s",
+					"xUySTKwBZP1qUlQHYs",
+					"xUySTK9BHdfLfwej7i"];
+					
+		var gif = gifs[Math.floor(Math.random()*(gifs.length))];
+		document.body.style.backgroundImage = "url('https://media.giphy.com/media/" + gif + "/giphy.gif')";
+	</script>
 </html>
