@@ -4,26 +4,24 @@
         <title>Matt loves coffee</title>
 		<style>
 			body {
-				height: 100vh;
 				margin: 0;
 				padding: 0;
-				background-size: auto 100%;
-				background-repeat: no-repeat;
-				background-position: center;
 				background-color: #000000;
+				overflow: hidden;
+				text-align: center;
+				position: fixed;
+				left: 50%;
+				transform: translate(-50%);
+			}
+			#vid {
+				height: 100vh;
 			}
 		</style>
     </head>
-	
+	<link rel="icon" href="favicon.ico">
 	<body>
-		<!-- sudo make -me coffee -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<video autoplay muted loop playsinline src="https://media.giphy.com/media/fSwFR4JyjUQYeSKMYE/source.mov" id="vid"><source type="video/mp4"></video>
 	</body>
 	
-	<script>
-		var gifs = ["l1Avyqhb8oFhDngZy", // really love coffee
-			    "xUPOqjKYhyXwQhuNFK"]; // only with my oxygen 
-					
-		var gif = gifs[Math.floor(Math.random()*(gifs.length))];
-		document.body.style.backgroundImage = "url('https://media.giphy.com/media/" + gif + "/giphy.gif')";
-	</script>
 </html>
